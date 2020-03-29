@@ -292,9 +292,52 @@ print(np.dot(x, v))
 #  [43 50]]
 print(x.dot(y))
 print(np.dot(x, y))
+
+# Transposition
+x = np.array([[1,2], [3,4]])
+print(x)    # Prints "[[1 2]
+            #          [3 4]]"
+print(x.T)  # Prints "[[1 3]
+            #          [2 4]]"
+
+# Note that taking the transpose of a rank 1 array does nothing:
+v = np.array([1,2,3])
+print(v)    # Prints "[1 2 3]"
+print(v.T)  # Prints "[1 2 3]"
+
 #+END_SRC
 
+**** Broadcasting
+#+BEGIN_SRC python
+import numpy as np
 
+# We will add the vector v to each row of the matrix x,
+# storing the result in the matrix y
+x = np.array([[1,2,3], [4,5,6], [7,8,9], [10, 11, 12]])
+v = np.array([1, 0, 1])
+y = x + v  # Add v to each row of x using broadcasting
+print(y)  # Prints "[[ 2  2  4]
+          #          [ 5  5  7]
+          #          [ 8  8 10]
+          #          [11 11 13]]"
+#+END_SRC
+Broadcasting two arrays together follows these rules:
+
+1. If the arrays do not have the same rank, prepend the shape of the lower rank
+   array with 1s until both shapes have the same length.
+2. The two arrays are said to be compatible in a dimension if they have the same
+   size in the dimension, or if one of the arrays has size 1 in that dimension.
+3. The arrays can be broadcast together if they are compatible in all
+   dimensions.
+4. After broadcasting, each array behaves as if it had shape equal to the
+   elementwise maximum of shapes of the two input arrays.
+5. In any dimension where one array had size 1 and the other array had size
+   greater than 1, the first array behaves as if it were copied along that
+   dimension.
+#+BEGIN_SRC python
+# CODE
+return 4 + 3
+#+END_SRC
 ** Pandas
 axis: 0 for rows (index), 1 for columns (attributes, series)
 *** Series
