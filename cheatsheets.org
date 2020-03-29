@@ -334,10 +334,7 @@ Broadcasting two arrays together follows these rules:
 5. In any dimension where one array had size 1 and the other array had size
    greater than 1, the first array behaves as if it were copied along that
    dimension.
-#+BEGIN_SRC python
-# CODE
-return 4 + 3
-#+END_SRC
+
 ** Pandas
 axis: 0 for rows (index), 1 for columns (attributes, series)
 *** Series
