@@ -85,6 +85,7 @@ g.greet(loud=True)   # Call an instance method; prints "HELLO, FRED!"
 Provides a high-performance multidimensional array object, and tools for working
 with these arrays. Goto library for scientific computing.
 *** Arrays
+Must be of the same type (np.int64, np.float64)
 **** Creation/Functions
 #+BEGIN_SRC python
 import numpy as np
@@ -240,7 +241,74 @@ print(a[bool_idx])  # Prints "[3 4 5 6]"
 print(a[a > 2])     # Prints "[3 4 5 6]"
 
 #+END_SRC
+**** Array Operations
+#+BEGIN_SRC python
+# Addition
+print(x + y)
+print(np.add(x, y))
+# Substraction
+print(x - y)
+print(np.subtract(x, y))
+# Product: Elementwise
+print(x * y)
+print(np.multiply(x, y))
+# Division: Elementwise
+print(x / y)
+print(np.divide(x, y))
+# Squareroot: Elementwise
+print(np.sqrt(x))
+#+END_SRC
+***** Aggregation
+#+BEGIN_SRC python
+import numpy as np
+
+x = np.array([[1,2],[3,4]])
+
+print(np.sum(x))  # Compute sum of all elements; prints "10"
+print(np.sum(x, axis=0))  # Compute sum of each column; prints "[4 6]"
+print(np.sum(x, axis=1))  # Compute sum of each row; prints "[3 7]"
+#+END_SRC
+
+**** Linear Algebra Operations
+#+BEGIN_SRC python
+import numpy as np
+
+x = np.array([[1,2],[3,4]])
+y = np.array([[5,6],[7,8]])
+
+v = np.array([9,10])
+w = np.array([11, 12])
+
+# Inner product of vectors; both produce 219
+print(v.dot(w))
+print(np.dot(v, w))
+
+# Matrix / vector product; both produce the rank 1 array [29 67]
+print(x.dot(v))
+print(np.dot(x, v))
+
+# Matrix / matrix product; both produce the rank 2 array
+# [[19 22]
+#  [43 50]]
+print(x.dot(y))
+print(np.dot(x, y))
+#+END_SRC
+
+
+** Pandas
+axis: 0 for rows (index), 1 for columns (attributes, series)
+*** Series
+
+
 * Haskell
+** Normal forms
+*** Thunk
+Another name for a function in a "lazy" context: a function yet to be evaluated.
+*** (Reduced) Normal Form
+Basically an irreducible expression
+*** Weak Head Normal Form
+"Intermediate step": The outermost expression is not a thunk, but partiall
+evaluated.
 ** Strictness
 *** Bottom
 Bottom is a notation for a computation that never computes successfully
@@ -269,4 +337,19 @@ Example2: strict evaluation
 ($!) :: (a -> b) -> a -> b
 f $! x = x `seq` f x
 #+END_SRC
+
 ** Parallelism
+Parallel program solves a single problem. The purity of Haskell makes it
+suitable for parallel programming, however, the laziness makes things a little
+bit tricky.
+*** pseq and par
+**** par
+It serves a similar purpose to seq: it evaluates its left argument to weak
+head normal form, and returns its right. As its name suggests, par can evaluate
+its left argument in parallel with whatever other evaluations are occurring.
+The par function does not actually promise to evaluate an expression in parallel
+with another. It gives the runtime system the freedom to act intelligently when
+it encounters a use of par.
+**** pseq
+It evaluates the expression on the left to WHNF *before* returning the expression
+on the right.
