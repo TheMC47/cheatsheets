@@ -334,12 +334,33 @@ Broadcasting two arrays together follows these rules:
 5. In any dimension where one array had size 1 and the other array had size
    greater than 1, the first array behaves as if it were copied along that
    dimension.
+*** Misc
+**** Show Build, config
+#+BEGIN_SRC python :results output
+import numpy as np
 
-** Pandas
-axis: 0 for rows (index), 1 for columns (attributes, series)
-*** Series
+print(np.__version__)
+print(np.show_config())
+#+END_SRC
+**** Display help on a function
+#+BEGIN_SRC python :results output
+import numpy as np
+print(np.info(np.add))
+#+END_SRC
+**** Images
+In =scipy 1.4.1=, the function =scipy.misc.imread= does not exist anymore. For
+that you need to go through =Pillow= to read images into a =numpy.array= object.
+#+BEGIN_SRC python
+import numpy as np
+from PIL import Image
 
-
+img = np.array(Image.open("cat.jpg"))
+print(img.dtype, img.shape)
+#+END_SRC
+** Scipy
+SciPy builds on numpy, and provides a large number of functions that operate on
+numpy arrays and are useful for different types of scientific and engineering
+applications.
 * Haskell
 ** Normal forms
 *** Thunk

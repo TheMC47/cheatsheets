@@ -6,6 +6,8 @@ Cool things and (useful) tricks that I might forget, to make the code elegant an
 
 http://cs231n.github.io/
 
+https://www.w3resource.com/python-exercises/numpy/
+
 https://wiki.haskell.org/
 
 http://book.realworldhaskell.org/
