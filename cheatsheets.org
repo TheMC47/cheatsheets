@@ -502,3 +502,9 @@ it encounters a use of par.
 **** pseq
 It evaluates the expression on the left to WHNF *before* returning the expression
 on the right.
+* Mathematics
+** Analysis
+*** Gradient
+\[
+    \hat{F}(\nu) = \frac{G(\nu)}{H(\nu)}.
+\]
