@@ -502,11 +502,3 @@ it encounters a use of par.
 **** pseq
 It evaluates the expression on the left to WHNF *before* returning the expression
 on the right.
-* Mathematics
-** Analysis
-*** Gradient
-Foo bar \(f(x) = \frac{x^3}{n}\) chicken checken.
-$f(x) = \frac{x^3}{n}$
-\begin{equation}
-f(x) = \frac{x^3}{n}
-\end{equation}
