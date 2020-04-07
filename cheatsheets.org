@@ -80,7 +80,11 @@ g = Greeter('Fred')  # Construct an instance of the Greeter class
 g.greet()            # Call an instance method; prints "Hello, Fred"
 g.greet(loud=True)   # Call an instance method; prints "HELLO, FRED!"
 #+END_SRC
-
+** Misc
+#+BEGIN_SRC python
+# Assigning infinity
+infinity = float("inf")
+#+END_SRC
 ** Numpy
 Provides a high-performance multidimensional array object, and tools for working
 with these arrays. Goto library for scientific computing.
@@ -240,6 +244,17 @@ print(a[bool_idx])  # Prints "[3 4 5 6]"
 # We can do all of the above in a single concise statement:
 print(a[a > 2])     # Prints "[3 4 5 6]"
 
+#+END_SRC
+***** Select one element fro each row
+#+BEGIN_SRC python :results output
+import numpy as np
+
+input_array = np.array([[3, 14], [12, 5], [75, 50]])
+select_id = [0, 1, 1]
+
+output_array = np.choose(select_id, input_array.T)
+
+print(output_array)
 #+END_SRC
 **** Array Operations
 #+BEGIN_SRC python
