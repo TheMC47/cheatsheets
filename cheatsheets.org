@@ -506,3 +506,7 @@ on the right.
 ** Analysis
 *** Gradient
 Foo bar \(f(x) = \frac{x^3}{n}\) chicken checken.
+$f(x) = \frac{x^3}{n}$
+\begin{equation}
+f(x) = \frac{x^3}{n}
+\end{equation}
