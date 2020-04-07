@@ -505,6 +505,4 @@ on the right.
 * Mathematics
 ** Analysis
 *** Gradient
-\[
-    \hat{F}(\nu) = \frac{G(\nu)}{H(\nu)}.
-\]
+Foo bar \(f(x) = \frac{x^3}{n}\) chicken checken.
