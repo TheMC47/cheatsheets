@@ -1,0 +1,106 @@
+#+TITLE: Studies
+
+* Pflichtmodule
+** Diskrete Wahrscheinlichkeitstheorie
+- ECTS: 6
+- Aufgezeichnet: Yes
+- Anmeldung [2/3]
+  - [X] Vorlesung
+  - [X] Übung
+  - [ ] Klausur
+- Bonus: Yes: 1/3
+  + Werden bei den ersten sechs und zweiten sechs Ubungsblättern jeweils
+  mindestens 50% der insgesamt erreichbaren Punkte erzielt, so verbessert sich
+  die Note einer bestandenen Erstklausur (05. August 2020) um 1/3 Notenstufe.
+- Link: http://www14.in.tum.de/lehre/2020SS/dwt/index.html.de
+** Einführung in die theoretische Informatik
+- ECTS: 8
+- Aufgezeichnet: Yes
+- Piazza: Yes https://piazza.com/class/k85zbaml53l59u
+- Anmeldung [1/3]
+  - [X] Vorlesung
+  - [ ] Übung @ 23.04.2020 19:00
+  - [ ] Klausur
+- Bonus: Yes
+  |-------+-----+------|
+  | Bonus | Von |  Bis |
+  |-------+-----+------|
+  |   0.0 |   0 | 34.5 |
+  |   0.3 |  35 | 43.5 |
+  |   0.6 |  44 | 52.5 |
+  |   1.0 |  53 |   60 |
+  |-------+-----+------|
+- Hausaufgaben:
+  + 2-er Teams
+  + Jedes Mitgied mind. 5 Abgaben
+  + DE oder EN
+  + Auf Moodle
+- Programmieraufgaben: Nicht in teams (duh)
+- Link: https://www21.in.tum.de/teaching/theo/SS20/
+** Seminar: Adversarial Machine Learning
+** Modellbildung und Simulation (Fokus Analysis)
+- ECTS: 9
+- Aufgezeichnet: Yes
+- Anmeldung [2/3]
+  - [X] Vorlesung
+  - [X] Übung
+  - [ ] Klausur
+- Bonus: TBA
+- Hausaufgaben: TBA
+- Programmieraufgaben: TBA
+* Wahlmodule
+** Statistik: Grundlagen
+- ECTS: 5
+- Aufgezeichnet: ?
+- Piazza: ?
+- Anemldung [1/2]
+  - [X] Vorlesung
+  - [ ] Übung
+  - [ ] Klausur
+** Functional Data Structures
+- ECTS: 5
+- Aufgezeichnet: Yes
+- Hausaufgaben: 40% of the grade
+  - Submission: https://competition.isabelle.systems/
+  - Check hints on the website
+- Anmeldung [1/2]
+  - [X] Vorlesung
+  - [ ] Klausur
+- Link: https://www21.in.tum.de/teaching/FDS/SS20/
+** Algorithmic Game Theory
+- ECTS: 5
+- Aufgezeichnet: Yes
+- Piazza: No
+- Anmeldung [1/2]
+  - [X] Vorlesung
+  - [ ] Klausur
+- Exercises:
+  + G(ame): @Saturday 23:59.
+  + H(omework): Discussed in the tutorials, prepared beforehand
+  + T(utor):  Discussed in the tutorials, not prepared
+  + Q(uiz): each 3 to 4 weeks
+- Bonus:
+  + G-grade = Q + G
+  + final_grade = 0.8 * exam_grade + 0.2 * G-grade
+- Link: https://dss.in.tum.de/teaching/ss-20/41-teaching/semester/sommersemester-2020/224-algorithmic-game-theory-ss2020.html
+** Operations Research
+- ECTS: 6
+- Aufgezeichnet: Yes
+- Anmeldung [2/3]
+  - [X] Vorlesung
+  - [X] Übung
+  - [ ] Klausur
+- Übung: Meetup (Tickets auf Moodle)
+- Bonus: Hausaufgaben (0.3)
+- Hausaufgaben:
+  - handschriftliche Abgaben
+  - 2 Hausaufgaben
+  - 2 Aufgaben
+    |---------------------------------+----------|
+    | Bearbeitung                     | Punkte   |
+    |---------------------------------+----------|
+    | 50% Sinnvoll bearbeitet         | 0 oder 1 |
+    | Vollständig sinnvoll bearbeitet | 2        |
+    |---------------------------------+----------|
+  - 6 - 8 Punkte: -Bonus
+- Link: https://dss.in.tum.de/teaching/ss-20/41-teaching/semester/sommersemester-2020/227-operations-research-planen-und-entscheiden-in-betrieblichen-informationssysteme-ss2020.html
