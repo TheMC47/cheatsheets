@@ -4,14 +4,20 @@ Cool things and (useful) tricks that I might forget, to make the code elegant an
 
 # resources
 
-http://cs231n.github.io/
+## Python
 
-https://www.w3resource.com/python-exercises/numpy/
+- http://cs231n.github.io/
 
-https://wiki.haskell.org/
+- https://www.w3resource.com/python-exercises/numpy/
 
-http://book.realworldhaskell.org/
+## Hakell
 
-http://learnyouahaskell.com/
+- https://wiki.haskell.org/
 
-https://medium.com/@aleksandrasays/brief-normal-forms-explanation-with-haskell-cd5dfa94a157
+- http://book.realworldhaskell.org/
+
+- http://learnyouahaskell.com/
+
+- https://medium.com/@aleksandrasays/brief-normal-forms-explanation-with-haskell-cd5dfa94a157
+
+- Stack: https://www.youtube.com/watch?v=sRonIB8ZStw

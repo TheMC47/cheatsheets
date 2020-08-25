@@ -450,6 +450,37 @@ plt.show()
 #+END_SRC
 
 * Haskell
+** Stack
+Stack *is* the sane way to deal with dependencies in Haskell. This is a tl;dr
+summary of things I might need to use and find quickly. Check the [[https://docs.haskellstack.org/en/stable/README/][documentation]],
+it's pretty good!
+*** Global project
+**** Getting started
+Launching ~stack setup~ /outside/ of a project, will setup the global project. To access things like ghc and ghci, simply execute ~stack ghc~ or ~stack ghci~
+
+**** Installing a Library
+This will make the library "importable" inside of Haskell files (and ghci)
+#+BEGIN_SRC bash
+stack build xmonad
+#+END_SRC
+**** Installing an executable
+This will build the library and put an executable on the path
+#+BEGIN_SRC bash
+stack install brittany
+#+END_SRC
+*** An actual project
+Creating a new project:
+#+BEGIN_SRC bash
+stack new project
+#+END_SRC
+Pretty straight forward! It will try to reuse the global configuration.
+*** Building "difficult" packages
+Stack would hint you to add the some dependencies to the global project. Don't
+do that. Instead, clone the repository, do a ~stack init~ to create a stack.yaml
+file, and then try to build from there. This is more clean and it keeps the
+dependencies isolated. Stack is smart about using dependencies, so it will try
+to reuse them as much as possible.
+
 ** Normal forms
 *** Thunk
 Another name for a function in a "lazy" context: a function yet to be evaluated.
