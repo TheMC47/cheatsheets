@@ -8,18 +8,24 @@
   - [X] Vorlesung
   - [X] Übung
   - [ ] Klausur
+  - Hausaufgaben:
+  + Abgabe deadline : 10:00 Montag
+  + 2-er Teams
+  + Latex möglich
+  + Auf Moodle
 - Bonus: Yes: 1/3
   + Werden bei den ersten sechs und zweiten sechs Ubungsblättern jeweils
   mindestens 50% der insgesamt erreichbaren Punkte erzielt, so verbessert sich
   die Note einer bestandenen Erstklausur (05. August 2020) um 1/3 Notenstufe.
+- tum.sexy redirect : dwt.tum.sexy
 - Link: http://www14.in.tum.de/lehre/2020SS/dwt/index.html.de
 ** Einführung in die theoretische Informatik
 - ECTS: 8
 - Aufgezeichnet: Yes
 - Piazza: Yes https://piazza.com/class/k85zbaml53l59u
-- Anmeldung [1/3]
+- Anmeldung [2/3]
   - [X] Vorlesung
-  - [ ] Übung @ 23.04.2020 19:00
+  - [X] Übung 
   - [ ] Klausur
 - Bonus: Yes
   |-------+-----+------|
@@ -31,11 +37,15 @@
   |   1.0 |  53 |   60 |
   |-------+-----+------|
 - Hausaufgaben:
+  + Abgabe Deadline : Montag 23:59
   + 2-er Teams
   + Jedes Mitgied mind. 5 Abgaben
   + DE oder EN
+  + Latex möglich
   + Auf Moodle
+- AutomataTutor : https://automata-tutor.model.in.tum.de  
 - Programmieraufgaben: Nicht in teams (duh)
+- Tum.sexy redirect : theo.tum.sexy
 - Link: https://www21.in.tum.de/teaching/theo/SS20/
 ** Seminar: Adversarial Machine Learning
 ** Modellbildung und Simulation (Fokus Analysis)
@@ -55,7 +65,7 @@
 - Piazza: ?
 - Anemldung [1/2]
   - [X] Vorlesung
-  - [ ] Übung
+  - [X] Übung
   - [ ] Klausur
 ** Functional Data Structures
 - ECTS: 5
