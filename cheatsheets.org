@@ -456,8 +456,8 @@ summary of things I might need to use and find quickly. Check the [[https://docs
 it's pretty good!
 *** Global project
 **** Getting started
-Launching ~stack setup~ /outside/ of a project, will setup the global project. To access things like ghc and ghci, simply execute ~stack ghc~ or ~stack ghci~
-
+Launching ~stack setup~ /outside/ of a project, will setup the global project.
+To access things like ghc and ghci, simply execute ~stack ghc~ or ~stack ghci~
 **** Installing a Library
 This will make the library "importable" inside of Haskell files (and ghci)
 #+BEGIN_SRC bash
@@ -533,3 +533,47 @@ it encounters a use of par.
 **** pseq
 It evaluates the expression on the left to WHNF *before* returning the expression
 on the right.
+** Monads
+*** Huh?
+What you need to remember: Monads basically represent a value (a computation)
+that is decorated with some context. ~Maybe~ represent computations that may
+have failed. Lists (a.k.a the ~[]~ Monad) represent *non-deterministic*
+computations. ~Writer~ represent computations with a sort of log, etc.
+
+There are basically two functions to implement when instanciating the Monad class:
++ ~return~ puts a value in a default context
++ ~>>=~ *shoves* a monadic value into a function taking pure values
+#+BEGIN_SRC haskell
+instance Monad m where
+  retrun :: a -> m a
+  (>>=) :: m a -> (a -> m b) -> m b
+#+END_SRC
+The implementation must respect *The Monadic laws*: (~:=:~ for semantic
+equivalence)
++ Left Identity
+  #+BEGIN_SRC haskell
+return x >>= f  :=: f x
+  #+END_SRC
++ Right Identity
+  #+BEGIN_SRC haskell
+m >>= return :=: m
+  #+END_SRC
++ Associativity
+  #+BEGIN_SRC haskell
+(m >>= f) >>= g :=: m >>= (\x -> f x >>= g)
+  #+END_SRC
+*** Do Notation
+The do notation is just syntactic sugar. It mainly allows two things: /sequencing/ and /binding/.
+#+BEGIN_SRC haskell
+-- sequencing
+do expr1; expr2; ... exprn
+  :=:
+expr1 >> expr2 >> ... >> exprn
+---
+do
+  expr1
+  x1 <- expr2
+  expr3 x1
+  :=:
+expr1 >> expr2 >>= \x1 -> expr3 x1
+#+END_SRC
